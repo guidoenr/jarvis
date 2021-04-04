@@ -4,7 +4,7 @@ import json
 URL = "https://ttsmp3.com/makemp3_new.php"
 
 data = {
-    'msg': 'Welcome again boss, how its going?',
+    'msg': 'The current time in {} is {}',
     'lang': 'Brian',
     'source': 'ttsmp3'
 }
@@ -15,6 +15,7 @@ import threading
 
 
 if __name__ == '__main__':
+    data['msg'].format('argentina', '21:30')
     response = requests.post(url=URL, data=data)
     response_data = json.loads(response.text)
     url = response_data['URL']
