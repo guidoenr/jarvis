@@ -6,11 +6,7 @@ import threading
 
 
 if __name__ == '__main__':
-    mp3File = 'resources/responses/success/right-away-boss.mp3'
+    mp3File = 'resources/responses/success/at-your-service-boss.mp3'
     sound = AudioSegment.from_mp3(mp3File)
     thread = threading.Thread(target=play, args=(sound,))
     thread.start()
-    print(1)
-    sleep(2)
-    print(2)
-    sleep(3)
