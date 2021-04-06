@@ -1,5 +1,8 @@
 import requests
 import json
+from pydub import AudioSegment
+from pydub.playback import play
+
 
 URL = "https://ttsmp3.com/makemp3_new.php"
 
@@ -9,9 +12,6 @@ data = {
     'source': 'ttsmp3'
 }
 
-from pydub import AudioSegment
-from pydub.playback import play
-import threading
 
 
 if __name__ == '__main__':
@@ -27,4 +27,3 @@ if __name__ == '__main__':
 class RequestHandler:
 
     def get_mp3(self, data):
-        pass
