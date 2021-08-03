@@ -4,8 +4,8 @@ data_time = {
     'source': 'ttsmp3'
 }
 
-data_wikipedia = {
-    'msg': 'The current time in {country} is {time}',
+data_internet = {
+    'msg': 'Your current internet connection its about {speed} megabytes per second, sir',
     'lang': 'Brian',
     'source': 'ttsmp3'
 }
